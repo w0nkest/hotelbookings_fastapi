@@ -21,6 +21,7 @@ API provides endpoints for retrieving booking data and generating analytical ins
 
 For more detailed information you can visit ```/docs``` endpoint
 
+---
 
 # FastAPI Project Setup
 
