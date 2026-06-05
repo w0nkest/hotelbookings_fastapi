@@ -1,21 +1,39 @@
+# Hotel bookings analysis API
+
+This project represents backend part of any further applications for making analysis of hotel bookings, kept in *hotel_bookings_data.csv* file.
+API provides endpoints for retrieving booking data and generating analytical insights from the hotel booking dataset.
+- ```/bookings```: retrieve all the bookings from dataset
+- ```/bookings/{booking_id}```: retrieve specific booking by provided id
+- ```/bookings/search```: search for bookings that suits query parameters
+- ```/bookings/stats```: retrieve general statistics about the dataset
+- ```/bookings/analysis```: perform advanced data analysis, including trends
+- ```/bookings/nationality```: retrieve bookings with nationality, provided as query parameter
+- ```/bookings/popular_meal_packages```: retrieve most popular meal package
+- ```/bookings/avg_length_of_stay```: retrieve average length of stay grouped by booking year and hotel type
+- ```/bookings/total_revenue```: retrieve revenue of hotels grouped by type
+- ```/bookings/top_countries```: retrieve top 5 countries by bookings
+- ```/bookings/repeated_guest_percentage```: retrieve percentage of repeated guests
+- ```/bookings/total_guests_by_year```: retrieve total guest count grouped by booking year
+- ```/bookings/avg_daily_rate_resort```: retrieve average ADR by Resort hotel bookings
+- ```/bookings/most_common_arrival_date_city```: retrieve most common arrival date of week in City hotel
+- ```/bookings/count_by_hotel_meal```: retrieve booking counts grouped by hotel and meal types
+- ```/bookings/total_revenue_resort_by_county```: retrieve booking counts grouped by hotel type and repeated guest status
+
+For more detailed information you can visit ```/docs``` endpoint
+
+
 # FastAPI Project Setup
 
 To run the FastAPI server, follow the steps below.
 
 ---
 
-## 1. Unzip the project archive
+## 1. Clone repository
 
-### macOS / Linux
 
 ```bash
-unzip proj.zip
-```
-
-### Windows (PowerShell)
-
-```powershell
-Expand-Archive project.zip
+git clone https://github.com/w0nkest/hotelbookings_fastapi
+cd hotelbookings_fastapi
 ```
 
 ---
@@ -41,7 +59,6 @@ venv\Scripts\activate
 ## 3. Go to project folder
 
 ```bash
-cd proj
 cd project
 ```
 
